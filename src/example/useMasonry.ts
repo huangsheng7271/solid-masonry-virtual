@@ -70,7 +70,7 @@ const useMasonry = () => {
     // 瀑布流的一些属性
     const [masonryOption,setMasonryOption] = createSignal({
         loading: false,
-        bottomDistance: 0,
+        bottomDistance: 5,
         // 是否只展示图片，这是自定义加的一个属性
         onlyImage: false,
         topPreloadScreenCount: 0,
@@ -102,7 +102,7 @@ const useMasonry = () => {
     }
 
     onMount(() => {
-        loadData();
+        checkScrollPosition();
         let timeout = 0 ;
         const scrollHandler = async () => {
             if (timeout) {
@@ -110,7 +110,7 @@ const useMasonry = () => {
             }
             timeout = setTimeout(async () => {
                 await checkScrollPosition();
-            }, 300);
+            }, 0);
         };
         window.addEventListener('scroll', scrollHandler);
     })
