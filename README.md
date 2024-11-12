@@ -4,6 +4,10 @@
 
 `solid-masonry-virtual` 是一个基于 SolidJS 构建的虚拟化瀑布流组件，提供高性能的列表渲染，尤其适用于大量数据的展示。
 
+## 示例
+
+查看 [在线示例](https://solid-masonry-virtual.vercel.app/) 
+
 ## 安装
 
 ```bash
@@ -86,10 +90,6 @@ npm run dev
 ```bash
 npm run build
 ```
-
-## 示例
-
-查看 [在线示例](link-to-example) (请确保示例链接正确)
 
 ## 许可
 
