@@ -102,7 +102,8 @@ const useMasonry = () => {
     }
 
     onMount(() => {
-        checkScrollPosition();
+        loadData();
+
         let timeout = 0 ;
         const scrollHandler = async () => {
             if (timeout) {
